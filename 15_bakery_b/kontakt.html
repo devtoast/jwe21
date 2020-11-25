@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sices="16x16" href="img/favicon_semmerl.ico">
+    <title>Kontakt</title>
+
+    <link rel="stylesheet" href="css/kontakt_base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/kontakt_homepage-element.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/end.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header id="top">
+
+            <div class="inner-wrapper">
+
+                <div id="logo">
+                    <a href="index.html" title="Hier gehts zu unserer Startseite">
+                        <img src="img/Logo.png" alt="Bakery – Salzburg">
+                    </a>
+
+                </div>
+
+                <nav id="main-menu">
+
+                    <ul>
+                        <li><a href="index.html">Über uns</a></li>
+                        <li><a href="team.html">Unser Team</a></li>
+                        <li><a href="#">Galerie</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+
+
+        <main>
+
+            <section class="homepage-element inner-wrapper">
+
+                <div class="adresse">
+
+                    <address>
+                        Konditorei Bakery <br>
+                        John Doe <br>
+                        Uferweg 10 <br>
+                        1001 Wien <br>
+                        <br>
+                        +43 12 23 45 7 <br>
+                        <a href="mailto:stammgast@mcdonalds.at?subject=Anfrage%20via%20Website">stammgast@mcdonalds.at</a>
+                    </address>
+
+                </div>
+
+                <header>
+                    <h1>Nehmen Sie eine Bestellung auf</h1>
+                </header>
+
+                <div class="wrapper">
+                    
+                    <form id="formular" action="index.html" method="get">
+
+                        <fieldset>
+
+                            <p>
+
+                            <div class="geschlecht">
+
+                                <input type="radio" name="gender" id="gender_male" value="männlich">
+                                <label for="gender_male">Herr</label>
+
+                                <input type="radio" name="gender" id="gender_female" value="weiblich">
+                                <label for="gender_female">Frau</label>
+
+                                <input type="radio" name="company" id="company" value="firma">
+                                <label for="gender">Firma</label>
+
+                            </div>
+
+                            </p>
+
+
+                            <div class="formularfeld">
+                                <div>
+                                    <p>Name<br>
+                                        <label for="name"></label>
+                                        <input type="text" name="name" id="name"
+                                            placeholder="  Bitte geben Sie Ihren Namen ein">
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p>E-Mailadresse<br>
+                                        <label for="email"></label>
+                                        <input type="email" name="email" id="email"
+                                            placeholder="  Bitte geben Sie Ihre E-Mailadresse ein">
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p>Betreff<br>
+                                        <label for="betreff"></label>
+                                        <input type="message" name="betreff" id="betreff"
+                                            placeholder="  Was ist Ihr Anliegen?">
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p>Wunsch-Lieferdatum<br>
+                                        <label for="lieferdatum"></label>
+                                        <input type="date" name="lieferdatum" id="lieferdatum"
+                                            placeholder="  tt.mm.jjjj">
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p>Nachricht<br>
+                                        <textarea name="message" id="message" cols="30" rows="10"
+                                            placeholder="Details zu Ihrer Bestellung">  Details zu Ihrer Bestellung
+                                </textarea>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div style="font-size: 0.8em;">
+
+                                <input type="checkbox" name="policy" id="policy" value="Ich bin einverstanden."
+                                    required>
+                                <label for="policy"> Ich stimme der Verarbeitung meiner Daten zum Zweck der
+                                    Kontaktaufnahme
+                                    zu und akzeptiere diese</label>
+
+                            </div>
+                            <!--required - lesen = Plicht-->
+
+                        </fieldset>
+
+                        <div class="datenschutz">
+                            <p>
+                                <a href="policy.html" target="blank">Datenschutzbestimmungen</a>
+                            </p>
+                        </div>
+
+                        <button class="btn btn-soft" type="submit">Bestellen</button>
+
+                    </form>
+
+                </div>
+
+                <div class="map">
+
+                    <p id="map-headline">
+                    <h2>So einfach finden Sie uns</h2>
+                    </p>
+
+                    <div id="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2679.578268414424!2d13.04250615123567!3d47.8090103790964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4776907bdc3aaaa9%3A0xf72cc1140ab5220d!2sWIFI%20Salzburg!5e0!3m2!1sde!2sat!4v1606043644338!5m2!1sde!2sat"
+                            width="1200" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+
+        <footer id="main-footer">
+
+            <div class="inner-wrapper">
+
+                <address>
+                    Konditorei Bakery <br>
+                    John Doe <br>
+                    Uferweg 10 <br>
+                    1001 Wien <br>
+                    <br>
+                    +43 12 23 45 7 <br>
+                    <a href="mailto:stammgast@mcdonalds.at?subject=Anfrage%20via%20Website">stammgast@mcdonalds.at</a>
+                </address>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Über uns</a></li>
+                        <li><a href="team.html">Unser Team</a></li>
+                        <li><a href="">Galerie</a></li>
+                        <li><a href="">Kontakt</a></li>
+                        <li><a href="">Impressum</a></li>
+                        <li><a href="policy.html">Datenschutz &amp; Cookies</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </footer>
+
+
+        <div id="end">
+
+            <div class="inner-wrapper">
+                &copy; 2020 by BAKERY coder &bull; alle Rechte vorbehalten
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
