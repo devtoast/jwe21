@@ -1,0 +1,92 @@
+
+/* Tag Selektor */
+body {
+    background-color: honeydew;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+
+}
+
+table.special-design {
+    border: 1px solid #0000ff;
+    border-top: 5px solid green;
+    border-bottom-width: 10px;
+    border-bottom-style: dashed;
+}
+
+table.simple tr td {
+    border: 2px solid #00d5ff;
+    padding: 10px 50px 5px 25px;
+}
+
+table.simple {
+    border-width: 3px 10px 25px 0px;
+    border-style: solid;
+    border-color: orchid;
+}
+
+/* ID Selektor */
+
+#schlimmster-tag-der-woche {
+    color: red;
+    font-weight: bold;   
+}
+
+/* Class Selektor */
+
+.schoener-tag {
+    color: green;
+}
+
+
+
+
+
+table.beautiful {
+    margin-bottom: 20px;
+
+}
+
+table.beautiful th{
+    background:yellow;
+}
+
+table.beautiful td{
+    background: rgb(245, 244, 242);
+}
+
+table.beautiful td,
+table.beautiful th {
+    padding: 10px;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align: left;
+}
+
+table.beautiful thead th:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+table.beautiful thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+table.beautiful tfoot td {
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.aktion {
+border: 2px dashed;   
+border-radius: 10px;
+border-color: red;
+background: lightcoral;
+}
+
