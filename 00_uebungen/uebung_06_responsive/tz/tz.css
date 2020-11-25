@@ -1,0 +1,67 @@
+:root {
+    --color-primary: #329C7D;
+    --color-secondary: #E6F1ED;
+    --color-text: #555555;
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    src: url(../tz/fonts/poppins/Poppins-Light.ttf)
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../tz/fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    src: url(../tz/fonts/poppins/Poppins-SemiBold.ttf);
+}
+
+html, body {
+    font-family: "Poppins";
+}
+
+.wrapper {
+    max-height: 262px;
+    max-width: 1028px;
+    background-color: var(--color-secondary);
+}
+
+#tz_logo {
+    position: relative;
+    max-width: 262px;
+}
+
+#tz_text {
+    position: absolute;
+    top: 0;
+    left: 350px;
+}
+
+h1 {
+    color: var(--color-primary);
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1em;
+    margin-top: 30px;
+    margin-bottom: -3px;
+}
+
+h2 {
+    color: var(--color-text);
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 0.6em;
+}
+
+h2 span {
+    color: var(--color-primary);
+}

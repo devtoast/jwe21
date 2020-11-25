@@ -1,0 +1,45 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+
+    margin: 30px;
+}
+
+#logo {
+
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+}
+
+#menue {
+
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#header-image {
+
+    position: relative;
+    top: -30px;
+    left: -30px;
+    z-index: -1;
+    width: calc(100% + 30px + 30px);
+    height: 500px;
+    background-image: url(../img/10152620_10036882_32223836_201912121058.jpg);
+    background-position: 100% center;
+}

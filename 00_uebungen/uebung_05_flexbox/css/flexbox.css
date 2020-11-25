@@ -1,0 +1,102 @@
+:root {
+
+    --color-button: rgb(255, 174, 0);
+    --color-button-font: rgb(55, 55, 55);
+
+    --font-button: "Segoe";
+    
+}
+
+@font-face {
+
+    font-family: "Segoe";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/segoeuib.ttf);
+
+}
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#site-nav > ul {
+
+    list-style: none;
+
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+
+}
+
+#site-nav > ul > li > button {
+
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-button);
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+
+    flex-basis: 50%;
+    /* flex-basis? */
+    
+}
+
+#site-nav a {
+
+    text-decoration: none;
+    color: var(--color-button-font);
+
+    font-family: var(--font-button);
+    font-size: 15px;
+}
+    /* font besser zu #site-nav > ul > li > button? */
+
+
+
+    /* TEIL 2 */
+
+
+    .container {
+
+        background-color: rgb(230, 230, 230);
+
+    }
+
+
+    #item {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    #item > button {
+
+        border: none;
+        border-radius: 10px;
+        background-color: var(--color-button);
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+    
+    }
+        /* flex-basis? */
+
+    #item a {
+
+        text-decoration: none;
+        color: var(--color-button-font);
+    
+        font-family: var(--font-button);
+        font-size: 15px;
+        /* font besser zu #site-nav > ul > li > button? */
+    }
