@@ -1,0 +1,48 @@
+:root {
+    --brown: #D0B085;
+    --grey: #707070;
+}
+
+/* josefin-sans-regular - latin */
+
+@font-face {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("../fonts/josefin-sans-v12-latin-regular.woff2") format("woff2"), url("../fonts/josefin-sans-v12-latin-regular.woff") format("woff");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Josefin Sans";
+    font-size: 110%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+address {
+    font-style: normal;
+}
+
+.inner-wrapper {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+#map {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+
+#top .inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+}

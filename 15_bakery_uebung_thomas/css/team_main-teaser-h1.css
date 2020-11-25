@@ -1,0 +1,18 @@
+#main-teaser img 
+/* NUR in Verbindung mit "img" wird das Bild angesprochen!! */
+{
+    max-height: 400px;
+    object-fit: cover;
+}
+
+header {
+    margin: 40px 0;
+}
+
+h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--grey);
+}

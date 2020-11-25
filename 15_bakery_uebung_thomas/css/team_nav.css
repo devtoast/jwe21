@@ -1,0 +1,32 @@
+#main-menu ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0;
+    /* height 0 – dann verschwindet`s */
+    overflow: hidden;
+    /* ? */
+}
+
+#main-menu li {
+    margin: 0;
+    padding: 0;
+    /* reicht ul nicht?*/
+}
+
+@media (min-width: 992px)
+/* 768px noch zu klein?*/
+
+    {
+    #main-menu ul {
+        height: 100%;
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    #main-menu ul li {
+        margin-right: 15px;
+        margin-top: 40px;
+        /* Ich geb auf – margin-top: 40px; war original nicht*/
+    }
+}
