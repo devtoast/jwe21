@@ -1,0 +1,47 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* flex-wrap: wrap; WICHTIG! */
+
+.gallery .column {
+    flex-basis: 50%;
+    overflow: hidden;
+    border-right: 5px solid #ffffff;
+}
+
+.gallery .column:nth-child(2n) {
+    border-right: none;
+}
+
+
+.gallery img {
+    display: block;
+    border-bottom: 5px solid #ffffff;
+    object-fit: cover;
+
+}
+
+.landscape {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.portrait {
+    width: 100%;
+    height: calc(30vw * 2);
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        flex-wrap: nowrap;
+    }
+
+    .gallery .column:nth-child(3n) {
+
+        margin-left: 5px;
+    }
+
+
+}
