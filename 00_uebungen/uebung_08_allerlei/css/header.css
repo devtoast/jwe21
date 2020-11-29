@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+#logo img {
+    max-width: 50px;
+    height: 100%;
+}
+
+#burger-nav {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#burger-nav img {
+    max-width: 50px;
+    height: 100%;
+}
+
+#header-image {
+    position: relative;
+    top: -100px;
+    height: 400px;
+    width: auto;
+    z-index: -1;
+    overflow: hidden;
+    object-fit: cover;
+}
