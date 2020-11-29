@@ -26,6 +26,7 @@
 #burger-nav img {
     max-width: 50px;
     height: 100%;
+    overflow: hidden;
 }
 
 #menu {
