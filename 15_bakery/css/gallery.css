@@ -13,7 +13,7 @@
     border-right: 5px solid #ffffff;
 }
 
-/* overflow: hidde; beschneidet alles was übersteht */
+/* overflow: hidden; beschneidet alles was übersteht */
 
 .gallery .column:nth-child(2n) {
     border-right: none;
