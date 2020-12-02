@@ -1,10 +1,18 @@
 .text {
     color: var(--grey-dark);
     line-height: 1.5em;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Raleway";
+    font-weight: 200;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+h2 {
     margin-bottom: 10px;
     text-align: center;
     font-family: "Raleway";
@@ -21,6 +29,8 @@ h1 {
     font-weight: 200;
     font-size: 1em;
 }
+
+
 
 
 /* grid-gallery-01 */
@@ -44,7 +54,7 @@ h1 {
     grid-template-rows: repeat(6, 30vw);
     row-gap: 10px;
     column-gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 .grid-gallery-01 img {
@@ -85,4 +95,70 @@ h1 {
 
 .grid-gallery-01 img:nth-child(8) {
     grid-area: Bild8;
+}
+
+@media (min-width: 768px) {
+
+    .grid-gallery-01{
+
+    grid-template-areas: 
+    "Bild1 Bild5 Bild3 Bild7"
+    "Bild1 Bild6 Bild3 Bild8"
+    "Bild2 Bild6 Bild4 Bild8"
+    ;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 12vw);
+}
+}
+
+/* flex-gallery */
+
+.flex-gallery {
+    display: flex;
+    flex-wrap: wrap;  /* flex-wrap: wrap; WICHTIG! bei Mobileansicht*/
+}
+
+.flex-gallery .column {
+    flex-basis: 50%;
+    overflow: hidden;   /* overflow: hidden; beschneidet alles was übersteht */
+    border-right: 10px solid #ffffff;
+}
+
+.flex-gallery .column:nth-child(2n) {
+    border-right: none;
+}
+
+.flex-gallery img {
+    display: block;
+    border-bottom: 10px solid #ffffff;
+    object-fit: cover;
+}
+
+.flex-gallery .ls {
+    width: 100%;
+    height: 30vw;
+}
+
+.flex-gallery .po {
+    width: 100%;
+    height: calc(30vw * 2);
+}
+
+@media (min-width: 768px) {
+    .flex-gallery {
+        flex-wrap: nowrap;
+    }
+
+    .flex-gallery .column:nth-child(3) {
+        margin-left: 10px;
+    }
+
+    .flex-gallery .ls {
+        height: 15vw;
+    }
+
+    .flex-gallery .po {
+        height: calc(15vw * 2);
+    }
 }
