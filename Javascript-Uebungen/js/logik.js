@@ -120,7 +120,7 @@ katalog[0] = katalog[0] + ' NEU';
 
 
 
-//Objekt – geschwungene Klammer immer Object
+//Objekt – {} geschwungene Klammer immer Object
 
 var speicherplatzzugriffsname = 'groesse';
 
