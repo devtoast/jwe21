@@ -12,6 +12,7 @@ h1 {
     font-size: 2em;
     line-height: 1.2em;
 }
+
 h2 {
     margin-bottom: 10px;
     text-align: center;
@@ -19,6 +20,17 @@ h2 {
     font-weight: 200;
     font-size: 2em;
     line-height: 1.2em;
+}
+
+h3 { 
+    text-align: center;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: inherit;
+    line-height: 1.2em;
+    color: #ffffff;
+
+    
 }
 
 #billy {
@@ -30,26 +42,11 @@ h2 {
     font-size: 1em;
 }
 
-
-
-
 /* grid-gallery-01 */
 
 .grid-gallery-01 {
     display: grid;
-
-    grid-template-areas:
-    "Bild1 Bild5"
-    "Bild1 Bild6"
-
-    "Bild2 Bild6"
-
-    "Bild3 Bild7"
-    "Bild3 Bild8"
-
-    "Bild4 Bild8"
-    ;
-
+    grid-template-areas: "Bild1 Bild5" "Bild1 Bild6" "Bild2 Bild6" "Bild3 Bild7" "Bild3 Bild8" "Bild4 Bild8";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6, 30vw);
     row-gap: 10px;
@@ -63,7 +60,6 @@ h2 {
     height: 100%;
     object-fit: cover;
 }
-
 
 .grid-gallery-01 img:nth-child(1) {
     grid-area: Bild1;
@@ -98,30 +94,26 @@ h2 {
 }
 
 @media (min-width: 768px) {
-
-    .grid-gallery-01{
-
-    grid-template-areas: 
-    "Bild1 Bild5 Bild3 Bild7"
-    "Bild1 Bild6 Bild3 Bild8"
-    "Bild2 Bild6 Bild4 Bild8"
-    ;
-
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 12vw);
-}
+    .grid-gallery-01 {
+        grid-template-areas: "Bild1 Bild5 Bild3 Bild7" "Bild1 Bild6 Bild3 Bild8" "Bild2 Bild6 Bild4 Bild8";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 12vw);
+    }
 }
 
 /* flex-gallery */
 
 .flex-gallery {
     display: flex;
-    flex-wrap: wrap;  /* flex-wrap: wrap; WICHTIG! bei Mobileansicht*/
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    /* flex-wrap: wrap; WICHTIG! bei Mobileansicht*/
 }
 
 .flex-gallery .column {
     flex-basis: 50%;
-    overflow: hidden;   /* overflow: hidden; beschneidet alles was übersteht */
+    overflow: hidden;
+    /* overflow: hidden; beschneidet alles was übersteht */
     border-right: 10px solid #ffffff;
 }
 
@@ -149,16 +141,97 @@ h2 {
     .flex-gallery {
         flex-wrap: nowrap;
     }
-
     .flex-gallery .column:nth-child(3) {
         margin-left: 10px;
     }
-
     .flex-gallery .ls {
         height: 15vw;
     }
-
     .flex-gallery .po {
         height: calc(15vw * 2);
+    }
+}
+
+
+/* grid-gallery-02 */
+
+.grid-gallery-02 {
+    display: grid;
+    grid-template-areas: 
+    
+    "Bild1 Bild5" 
+    "Bild1 Bild6" 
+    "Feld2 Bild6" 
+    "Bild3 Bild7" 
+    "Bild3 Bild8" 
+    "Bild4 Bild8";
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 30vw);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 100px;
+}
+
+.grid-gallery-02 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-gallery-02 #feld2 {
+    display: flex;
+    overflow: hidden;
+    background-color: var(--green-dark);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+
+.grid-gallery-02 img:nth-child(1) {
+    grid-area: Bild1;
+}
+
+.grid-gallery-02 div:nth-child(2) {
+    grid-area: Feld2;
+}
+
+.grid-gallery-02 img:nth-child(3) {
+    grid-area: Bild3;
+}
+
+.grid-gallery-02 img:nth-child(4) {
+    grid-area: Bild4;
+}
+
+.grid-gallery-02 img:nth-child(5) {
+    grid-area: Bild5;
+}
+
+.grid-gallery-02 img:nth-child(6) {
+    grid-area: Bild6;
+}
+
+.grid-gallery-02 img:nth-child(7) {
+    grid-area: Bild7;
+}
+
+.grid-gallery-02 img:nth-child(8) {
+    grid-area: Bild8;
+}
+
+@media (min-width: 768px) {
+    .grid-gallery-02 {
+        grid-template-areas: 
+        
+        "Bild1 Bild5 Bild3 Bild7" 
+        "Bild1 Bild6 Bild3 Bild8" 
+        "Feld2 Bild6 Bild4 Bild8";
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 12vw);
     }
 }
