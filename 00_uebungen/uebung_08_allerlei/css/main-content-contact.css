@@ -54,11 +54,16 @@ Funktioniert nur außerhalb fieldset? */
     text-decoration: none;
 }
 
+.contact a:hover {
+    text-decoration: underline;
+}
+
 .btn {
+    margin: 5px 5px 5px 0px;
     background-color: var(--green-dark);
     color: #ffffff;
     border: none;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
     padding: 10px 20px;
     font-family: Raleway;
     font-weight: 400;

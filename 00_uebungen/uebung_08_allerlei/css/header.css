@@ -58,7 +58,12 @@
     width: auto;
     z-index: -1;
     overflow: hidden;
-    object-fit: cover;
+}
+
+#header-image-im {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header-image-logo {
