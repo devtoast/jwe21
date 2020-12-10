@@ -9,7 +9,6 @@ maxTemp: Maximaltemperatur
 
 Rückgabewert (string): Text mit Meldung innerhalb der Vorgaben
 
-
 */
 
 
