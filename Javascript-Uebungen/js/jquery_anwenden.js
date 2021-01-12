@@ -2,7 +2,7 @@
 
 // ANDERE SCHREIBWEISE – document.getElementsByTagName('body').innerHTML = '<div id="neues-js-element"></div>';
 
-console.log('die Seite ist geladen');
+// console.log('die Seite ist geladen');
 
 
 
@@ -27,3 +27,31 @@ $('#calc').click(
 
     }
 );
+
+
+$('#events').on(
+
+    {
+        'mouseenter': function () {
+            $(this).css(
+
+                {
+                    'background-color': 'yellow',
+                    'color': 'red'
+                }
+            );
+        },  //this bezieht sich auf events
+
+    'mouseleave': function () {
+        $(this).css(
+
+            {
+                'background-color': 'blue',
+                'color': 'white'
+            }
+        );
+    }
+    }
+
+);
+
