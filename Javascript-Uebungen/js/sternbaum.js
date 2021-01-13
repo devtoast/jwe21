@@ -1,3 +1,5 @@
+// Mein Versuch
+
 /*
 let lauf = 5;
 let stern = '*';
@@ -13,64 +15,87 @@ for (let line = "*"; line.length < 8; line += "**")
   */
 
 
+
+
+// Version von Manuel
+
 /*
-var output = '*';
-
-for (let i = 1; i <= 6; i++) {
-
-    //console.log(i);
-
-    var spaceFromLeft = ' ';
-
-    switch (i) {
-
-        case 1:
-            spaceFromLeft = '    '
-            break;
-
-        case 1:
-            spaceFromLeft = '   '
-            break;
-
-        case 1:
-            spaceFromLeft = '  '
-            break;
-
-        case 1:
-            spaceFromLeft = ' '
-            break;
-
-            default:
-                break;
-
-    }
-
-    if(i <= 5) {
-        console.log(spaceFromLeft + output);
-        output += '**';
-
-        else {
-            console.log '  **';
-        }
-
-    }
-}
-*/
-
 let output = '*';
-let spaceFromLeft = '';
+let spaceFromLeft;
+const stamm = output;
 
 for (let i = 1; i <= 6; i++) {
+    //console.log(i);
 
     if(i == 1) {
         spaceFromLeft = '    ';
-        else if(i == 2) {
-            spaceFromLeft = '   '
+    } 
+    if(i == 2) {
+        spaceFromLeft = '   '
+    } 
+    if(i == 3) {
+        spaceFromLeft = '  '
+    } 
+    if(i == 4) {
+        spaceFromLeft = ' '
+    } 
+    if(i == 5) {
+        spaceFromLeft = ''
+    } 
 
-        }
+    if(i != 1) {
+        output = output + '**';
     }
-}
 
+    if(i == 6) {
+        console.log('    *');
+    } else {
+        console.log(spaceFromLeft + output);
+    }
+
+
+}
+*/
+
+
+// Version von Ulvi
+
+let treeSize = 20;
+ 
+let star = "*"
+let space = " ";
+ 
+let output = "";
+ 
+let cnt1 = treeSize - 1;
+let cnt2 = 1;
+ 
+for (let i = 0; i < treeSize; i++) {
+ 
+    let starCnt = "";
+    let spaceCnt = "";
+ 
+    for (let j = 0; j < cnt1; j++)
+        spaceCnt += space;
+ 
+ 
+    for (let k = 0; k < cnt2; k++)
+        starCnt += star;
+ 
+ 
+    output = spaceCnt + starCnt;
+    console.log(output);
+ 
+    cnt1--;
+    cnt2 += 2;
+}
+ 
+let spaceCnt = "";
+ 
+for (let j = 0; j < treeSize - 1; j++)
+    spaceCnt += space;
+ 
+console.log(spaceCnt + "*")
 
 
 

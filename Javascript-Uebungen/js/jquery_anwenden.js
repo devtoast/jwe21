@@ -55,3 +55,13 @@ $('#events').on(
 
 );
 
+$('#events2').on({
+    'mouseenter': function() {
+        $(this).addClass('mouseover');
+    },
+
+    'mouseleave': function() {
+        $(this).removeClass('mouseover');
+    }
+});
+
