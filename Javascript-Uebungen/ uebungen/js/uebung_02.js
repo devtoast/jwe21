@@ -20,6 +20,8 @@ spruch = "<={" + spruch + "}=>";
 console.log(spruch);
 */
 
+
+/*
 const power = function (base, exponent) {
     let result = 1;
     for (let count = 0; count < exponent; count++) {
@@ -29,3 +31,45 @@ const power = function (base, exponent) {
 };
 
 console.log(power(3, 4))
+*/
+
+
+
+/*
+let total = 0, count = 1;
+while (count <= 10) {
+    total += count;
+    count += 1;
+}
+console.log(total);
+*/
+
+
+/*
+//Innerhalb von Backticks (od. Template-Literale) `` (mit $ und {}) können auch Berechnungen ausgeführt werden
+
+let test = `10 + 12 = ${10 + 12}`
+
+console.log(test)
+*/
+
+
+/*
+let theNumber = Number (prompt('Wähle eine Nummer'));
+console.log('Deine Nummer ist ' + theNumber * theNumber);
+
+// Number (groß geschrieben!!) = eine Funktion (NumberConstructor)
+*/
+
+/*
+let result = 1;
+let counter = 0;
+
+while (counter <10) {
+    result *= 2;
+    counter += 1;
+}
+
+console.log(result);
+*/
+

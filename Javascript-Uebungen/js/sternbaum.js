@@ -58,6 +58,7 @@ for (let i = 1; i <= 6; i++) {
 */
 
 
+/*
 // Version von Ulvi
 
 let treeSize = 20;
@@ -96,6 +97,35 @@ for (let j = 0; j < treeSize - 1; j++)
     spaceCnt += space;
  
 console.log(spaceCnt + "*")
+*/
+
+
+
+//let runCount = 0;
+let item = '*';
+let space = '';
+
+
+for (let runCount = 0; runCount < 10; runCount++) {
+
+    if (runCount == 0) {
+        space = '     x' + item;
+    }
+
+    if (runCount == 1) {
+        item += '**'
+    }
+
+    if (runCount == 2) {
+        item += '**'
+    }
+
+    console.log(item);
+
+}
+
+
+
 
 
 
