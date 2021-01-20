@@ -57,9 +57,9 @@ $(images).each(
 
     $('#gallery a').click(
         function(e){
-            e.preventDefault(); // Browserverhalten unterbinden - (e od. event e=Abkürzung!!) der function mitgeben!!!     WARUM???? muß das unterbunden werden?
+            e.preventDefault(); // Browserverhalten unterbinden - (e od. event e=Abkürzung!!) der function mitgeben!!!     WARUM???? muß das unterbunden werden? (sonst verlinkt`s – zu anderer Seite (Bild auf einer eigenen Seite))
 
-            let urlToMyOriginalImage = $(this).attr('href');  //$(this)????????
+            let urlToMyOriginalImage = $(this).attr('href');  //$(this)???????? (bezieht sich auf 'a' Selector)
             console.log(urlToMyOriginalImage);
 
             // TODO: Image-Tag dynamisch erzeugen (zusammenbauen)
@@ -74,12 +74,26 @@ $(images).each(
             um die Klasse "hide" wieder hinzuzufügen und somit den Lightbox-Container wieder auszublenden
             */
 
-$('span').click(
+/* $('span').click(
     function() {
         lightboxContainer.addClass('hide');
     }
-);
+); Meine Version */ 
+
+lightboxContainer.find('span.close').click(function() {
+    lightboxContainer.addClass('hide');
+});
 
 // verleihen eines Klick Events für jedes Thumb um das vergrößerte Bild anzuzeigen
+
+
+$(document).keyup (function(e) {
+    if(e.keyCode == 27) {
+        console.log('ESC wurde gedrückt');
+        lightboxContainer.addClass('hide');
+    }
+}); // Blendet Bild mit ESC aus
+
+
 
 

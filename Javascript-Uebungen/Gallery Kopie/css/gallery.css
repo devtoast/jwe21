@@ -16,6 +16,19 @@ img {
     height: auto;
 }
 
+/* Thumb-Effekt*/
+#gallery a img {
+    position: relative;
+    opacity: 0.8;
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+#gallery a:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+/* Thumb-Effekt Ende*/
+
 .wrapper {
     text-align: center;
 }
@@ -61,4 +74,8 @@ img {
 
 .hide {
     display: none;
+}
+
+a {
+    text-decoration: none; /* Entfernt die blauen Stricherl */
 }
