@@ -88,7 +88,7 @@ lightboxContainer.find('span.close').click(function() {
 
 
 $(document).keyup (function(e) {
-    if(e.keyCode == 27) {
+    if(e.keyCode == 27) { // 27 = ESCAPE-Taste
         console.log('ESC wurde gedrückt');
         lightboxContainer.addClass('hide');
     }

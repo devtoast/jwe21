@@ -39,7 +39,7 @@ $(window).scroll(function () {
 
     $('#scrollBox').css(
         {
-            'transform': 'translateY(' + Math.floor(scrollPos * 0.6) + 'px)',
+            'transform': 'translateY(' + Math.floor(scrollPos * 0.6) + 'px)', // Wiederspricht das dem 'translateX im css (Class 'show')? (verschwindet nicht nach rechts)
         }
     );
 
