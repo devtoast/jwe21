@@ -5,8 +5,8 @@ let f_username = $('#username');
 
 f_username.keyup(function () {    //keyup = jeder Tastendruck
 
-        // Zu Beginn der Prüfung muss die Punktezahl auf 0 gesetzt werden
-        f_username_isValid = 0;
+    // Zu Beginn der Prüfung muss die Punktezahl auf 0 gesetzt werden
+    f_username_isValid = 0;
 
     let wert = $(this).val();
     console.log('## Aktuelle Eingabe: ' + wert);
@@ -14,7 +14,7 @@ f_username.keyup(function () {    //keyup = jeder Tastendruck
     // Enthält zumindest einen Buchstaben und hat eine Länge von mind. 6 Zeichen
     // Rückgabewert bei einem Match ist ein Array ['gefundeneZeichenkette'] – Eckige Klammern "Alt+5"
 
-    if(wert.match( /[a-zA-Z]+/g ) != null && wert.length > 5) {
+    if (wert.match(/[a-zA-Z]+/g) != null && wert.length > 5) {
         console.log('Ihr Benutzername enthält zumindest 6 Buchstaben.');
         f_username_isValid++;
     } else {
@@ -25,7 +25,7 @@ f_username.keyup(function () {    //keyup = jeder Tastendruck
     //Enthält kein Sonderzeichen
     // würde es ein Sonderzeichen enthalten wäre der Rückgabewert ein Array ['gefundeneZeichenkette']
 
-    if(wert.match(/[!@#$%\^&*(){}[\]<>?/|\-+]/) == null) {
+    if (wert.match(/[!@#$%\^&*(){}[\]<>?/|\-+]/) == null) {
         console.log('Ihr Benutzername enthält kein Sonderzeichen. Das ist gut!');
         f_username_isValid++;
     } else {
@@ -35,16 +35,16 @@ f_username.keyup(function () {    //keyup = jeder Tastendruck
 
 
 
-// Enthält kein Leerzeichen  (https://regex101.com   /   https://blog.kulturbanause.de/2015/04/formular-validierung-waehrend-der-eingabe-mit-jquery/)
-// würde es ein Leerzeichen enthalten wäre der Rückgabewert ein Array ['gefundeneLeerzeichen']
+    // Enthält kein Leerzeichen  (https://regex101.com   /   https://blog.kulturbanause.de/2015/04/formular-validierung-waehrend-der-eingabe-mit-jquery/)
+    // würde es ein Leerzeichen enthalten wäre der Rückgabewert ein Array ['gefundeneLeerzeichen']
 
-if(wert.match(/\s/g) == null) {
-    console.log('Ihr Benutzername enthält keine Leerzeichen');
-    f_username_isValid++;
-} else {
-    console.warn('Ihr Benutzername enthält Leerzeichen. Die sind nicht OK!');
-    f_username_isValid = 0;
-}
+    if (wert.match(/\s/g) == null) {
+        console.log('Ihr Benutzername enthält keine Leerzeichen');
+        f_username_isValid++;
+    } else {
+        console.warn('Ihr Benutzername enthält Leerzeichen. Die sind nicht OK!');
+        f_username_isValid = 0;
+    }
 
 });
 
@@ -54,11 +54,11 @@ let submitBtn = $('#checkoutSubmit');
 f_submit.click(function (e) {
 
     // Treffen alle 3 Bedingungen zu dann ist das Feld "username" korrekt ausgefüllt
-    if(f_username_isValid == 3) {
+    if (f_username_isValid == 3) {
         $(this).closest('form').submit();
         return true;
     }
-    
+
     e.preventDefault();
     return false;
 
