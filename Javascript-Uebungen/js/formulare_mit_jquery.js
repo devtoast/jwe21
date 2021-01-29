@@ -1,5 +1,7 @@
 // die Variable für die Punktezahl der Validität muss Global definiert sein
-let f_username_isValid = 0; // 3 is valid
+
+/*
+let f_username_isValid; // 3 is valid
 
 let f_username = $('#username');
 
@@ -63,3 +65,78 @@ f_submit.click(function (e) {
     return false;
 
 });
+
+*/
+
+
+// Session 2 dynamische Ausgabe von HTML (Formular Felder)
+
+
+let f_children = $('#children');
+let f_children_ages = $('#children_ages');
+
+
+f_children.change(function () {
+
+    //console.log($(this).val() );
+
+    let amount = $(this).val();
+
+    f_children_ages.html(''); // wird zurückgesetzt (wir geleert)
+
+    for (let i = 0; i < amount; i++) {
+        console.log('kind ' + (i + 1));
+
+        let input = `<input type="text" id="child_${i + 1}_age" class="form-control child-age" required>`;
+
+        input = `<label for="child_${i + 1}_age">Alter Kind ${i + 1}</label>` + input;
+
+        input = `<div class="child row"> <div class="col-md-3">` + input + ` </div>  </div> `; //od. ${input}
+
+        f_children_ages.append(input); // in Verbindung mit   f_children_ages.html('');   – leert
+
+
+    }
+
+});
+
+
+let f_submit = $('#checkoutSubmit');
+
+let f_children_ages_isValid;
+
+f_submit.click(function (e) {
+
+
+    f_children_ages_isValid = 0;
+    $('input.child-age').each(function () {
+        let field = $(this);
+        if (field.val()) {
+            // aktuelles Feld wurde gesetzt
+            // positiver Rückgabewert (oder eine Variable wird um einen Wert erhöht)
+            f_children_ages_isValid++;
+        }
+    });
+
+    // Treffen alle 3 Bedingungen zu dann ist das Feld "username" korrekt ausgefüllt
+    if (f_children_ages_isValid == f_children.val() && f_username_isValid == 3) {
+        $(this).closest('form').submit();
+        return true;
+    }
+
+    e.preventDefault();
+    return false;
+
+});
+
+// Zeichen zählen (Zeichenzähler)
+
+//Zugriff auf die Textarea 'message'
+let message = $('#message');
+let counter = $('#counter');
+
+message.keyup(function() {
+    let count = $(this).val().length;
+    counter.html(count);
+});
+
