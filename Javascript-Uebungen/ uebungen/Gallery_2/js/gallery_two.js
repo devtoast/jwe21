@@ -44,3 +44,10 @@ $('#gallery a').click(
     lightboxContainer.find('span.close').click(function(){
         lightboxContainer.addClass('hide');
     });
+
+    $(document).keyup (function(e) {
+        if(e.keyCode == 27) { // 27 = ESCAPE-Taste
+            console.log('ESC wurde gedrückt');
+            lightboxContainer.addClass('hide');
+        }
+    }); // Blendet Bild mit ESC aus

@@ -1,6 +1,6 @@
 // die Variable für die Punktezahl der Validität muss Global definiert sein
 
-/*
+
 let f_username_isValid; // 3 is valid
 
 let f_username = $('#username');
@@ -66,7 +66,7 @@ f_submit.click(function (e) {
 
 });
 
-*/
+
 
 
 // Session 2 dynamische Ausgabe von HTML (Formular Felder)
