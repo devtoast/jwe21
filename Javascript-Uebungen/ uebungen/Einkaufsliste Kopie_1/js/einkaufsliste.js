@@ -1,10 +1,10 @@
 let orderItems = $('#order_items');
 let orderSet = $('#order_set');
 
-let listItem = $('#list_total');
+let listItem = $('.list_total');
 let output = $('.output')
 
-let deleteItem = $('.order_delete')
+let deleteItems = $('.order_delete')
 
 //let deleteBtn = $('.order_delete')
 //let list = $('#list'); //ul
@@ -39,7 +39,7 @@ orderSet.click(function () {
 
     //let listItem = `<li id="list"><button id="order_done">&#10004</button>${orderItemsVal}<button id="order_delete">&#10008</button></li>`;
 
-    let listItem = `<div id="list_total" class="order_delete"><button id="order_done "class="order_delete">&#10004</button><li id="list" class="order_delete">${orderItemsVal}</li><button id="order_delete" class="order_delete">&#10008</button></div><br>`;
+    let listItem = `<div id="list_total" class="list_total"><button id="order_done "class="order_done">&#10004</button><li id="list" class="list">${orderItemsVal}</li><button id="order_delete" class="order_delete">&#10008</button> </div> <br>`;
 
     output.append(listItem); //list
     console.log(listItem);
@@ -68,6 +68,25 @@ $('.output button.').click(function () {
 });
 //});*/
 
-deleteItem.click(function() {
+/*deleteItems.click(function() {
     output.remove(listItem);
-});
+});*/
+
+
+
+/*$(".order_delete").click(function(){
+    $(".output").remove(".list_total");
+  });*/
+
+/*deleteItems.click(function () {
+    output.remove(listItem);
+});*/
+
+
+$(".test").click(function(){
+    $(".list_total").remove();
+  });
+
+  /*$("order_delete").click(function(){
+    $(".list_total").remove();
+  });*/

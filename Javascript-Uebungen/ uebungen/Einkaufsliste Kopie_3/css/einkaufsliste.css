@@ -89,7 +89,7 @@ html, body {
     margin: 0px 20px;
 }
 
-#list_total {
+.list_total {
     display: flex;
     justify-content: center;
     align-content: center;
