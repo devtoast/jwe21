@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals</title>
+
+    <style>
+        body {
+            background: lightgreen;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        main div {
+            margin: 0.5em;
+            font-size: 5em;
+            display: grid;
+            justify-content: center;
+        }
+
+        #button-click {
+            display: grid;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        button {
+            border: none;
+            background-color: lightseagreen;
+            color: #fff;
+            padding: 20px;
+            font-size: 1.2em;
+
+        }
+
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 992px) {
+            main {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="button-click">
+        <button id="create-button">Create Animal</button>
+    </div>
+
+    <main>
+
+        <output id="output"></output>
+
+    </main>
+
+    <script src="js/animalclass.js"></script>
+    <script src="js/animalscript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+nav.main-navigation ul {
+    background: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    list-style: none;
+}
+
+nav.main-navigation ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav.main-navigation>ul>li {
+    display: block;
+    float: left;
+    background: silver;
+    border: 0px solid white;
+    margin: 0 10px;
+    position: relative;
+}
+
+nav.main-navigation ul li a {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: block;
+    background: black;
+    font-size: 1em;
+}
+
+nav.main-navigation ul li:hover a {
+    background: grey;
+    color: white;
+    font-size: 2em;
+}
+
+nav.main-navigation>ul>li>ul {
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: transform 300ms ease-out;
+}
+
+nav.main-navigation ul li:hover ul {
+    display: block;
+    background: grey;
+    transform: translateY(0);
+    z-index: 1;
+}
+
+nav.main-navigation ul li:hover ul li a {
+    display: block;
+    background: grey;
+}
+
+nav.main-navigation ul li ul li {
+    display: block;
+    width: 200px;
+}
+
+nav.main-navigation ul li ul li:hover a {
+    background: #666;
+    color: white;
+}
+
+a {
+    color: white;
+}

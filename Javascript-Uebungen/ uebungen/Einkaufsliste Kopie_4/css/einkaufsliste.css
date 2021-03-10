@@ -1,0 +1,117 @@
+:root {
+    --grey-dark: #444444;
+    --grey-middle: #646464;
+    --grey-light: #B4B4B4;
+    --red: #a00060;
+    --red-dark: #6c0041;
+}
+
+@font-face {
+    font-family: "Jakob";
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Jakob-Regular.otf);
+}
+
+@font-face {
+    font-family: "Jakob";
+    font-style: normal;
+    font-weight: 1000;
+    src: url(../fonts/Jakob-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Jakob", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+.wrapper {
+    max-width: 1024px;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+}
+.headline_wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#headline {
+    font-family: "Jakob";
+    font-size: 40px;
+    font-weight: 1000;
+    color: var(--grey-middle);
+    margin-bottom: 30px;
+}
+
+#cart {
+    height: 40px;
+    width: auto;
+    padding-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.order input {
+    margin-left: 20px;
+}
+
+#order_set {
+    font-family: "Jakob";
+    font-weight: 1000;
+}
+
+.order button {
+    margin: 0px 20px;
+}
+
+
+.output {
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
+
+.output button {
+    margin: 0px 20px;
+}
+
+/* .list_total {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-height: 20px;
+    margin-top: 20px;
+} */
+
+ul {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+}
+
+.list-item {
+    margin-top: 20px;
+}

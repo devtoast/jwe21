@@ -12,7 +12,7 @@ window.setInterval(function() {
 
 let myChart = $('#myChart');
 
-function createChart(labels, data) {
+/*function createChart(labels, data) {
     
     myChart = new Chart(myChart, {
 
@@ -49,9 +49,9 @@ function createChart(labels, data) {
 
 
     });
-}
+}*/
 
-$('#update_btn').click(function () {
+$('#update_btn').click(function () {  // anfang
 
     $.ajax({
         url: endpoint,
@@ -77,11 +77,11 @@ let html = '';
             $(response.data).each(function(index, eintrag) {
                  
                 // Ausgabe im HTML
-                /*
+                
                     html += `<strong class="price">${eintrag.priceUsd}</strong>`;
                     html += `<span class="time">${eintrag.time}</span>`;
                     html += '<br>';
-                */
+                
 
 
                 /**

@@ -4,7 +4,7 @@ myChart = new Chart(myChart, {
 
     // https://www.chartjs.org/docs/latest/charts/line.html
     
-    type: 'line',
+    type: 'line', // Art des Charts
 
     data: {
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack</title>
+
+    <style>
+        h1 {
+            font-size: 2em;
+            color: crimson;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        .operation-pop {
+            display: inline-flex;
+            position: relative;
+            height: 30px;
+            line-height: 2rem;
+        }
+
+        #pop-button {
+            margin-right: 10px;
+        }
+
+        #pop-value {
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Datenstrukturen in JavaScript – STACK (Stapel- od. Kellerspeicher)</h1>
+        <h2>Oben drauf – von oben runter (push 123 = pop 321)</h2>
+    </header>
+
+    <main>
+
+        <div id="stack" class="data structure">
+
+            <div class="user-input">
+
+                <div class="operation-push">
+
+                    <label for="">Wert:
+                        <input type="text" id="push-value">
+                    </label>
+
+                    <button id="push-button">Push</button>
+
+                </div>
+
+
+                <div class="operation-pop">
+
+                    <button id="pop-button">Pop</button>
+                    <div id="pop-value">Wert:</div>
+
+                </div>
+
+            </div>
+
+            <div class="output">
+                Stack:
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
