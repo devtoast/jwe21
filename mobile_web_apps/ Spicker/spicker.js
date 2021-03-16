@@ -3,7 +3,8 @@
 // integer – ganze Zahl
 
 // parse - analysieren / prüfen
-// parseInt – gibt einen String als ganze Zahl aus
+// parseInt(was soll geparsed werden) – gibt einen String als ganze Zahl aus
+// parseFloat(was soll geparsed werden) – gibt einen String als Kommazahl aus(Funktion)
 
 // scope – Gültigkeitsbereich
 
@@ -59,6 +60,14 @@
 // .addEventListener('click', funktionsname)  (Methode)
 // .addEventHandler = gleich wie Listener
 
+
+// document.createElement – erzeugt ein neues HTML-Element (Methode)
+// .append
+// .appendChild – erzeugt ein neues Kind-Element im ausgewälten Element
+
+// .textContent – gibt ausgewälten Text (z.B. aus API) aus / (.textContent = xy)
+
+
 // output.textContent
 
 // performance
@@ -105,9 +114,6 @@
 
 
 
-
-
-
 // Vordefinierte Objekte
 
 // Math
@@ -118,3 +124,37 @@
 // Math.max – größte Zahl aus einer Zahlenmenge
 // Math.sqrt – Quadratwurzel
 // Math.PI – 3,14
+
+
+// APIs (AJAX – Asynchrones Javascript (Seite muss nicht neu geladen werden))
+
+// fetch – Daten vom Server holen (method 'GET' = Standard und wird NICHT extra angegeben)
+// fetch – Daten auf Server schreiben (method 'POST' = MUSS angegeben werden!!)
+
+// Konstruktorfunktion "Promise" (Methoden: .then, .catch .finally)
+// steuert und koordiniert asynchrone Abläufe
+// .then
+// .catch – Fehlerbehandlung (immer)
+
+
+// oder mittels jQuery
+// XMLHttpRequest – alte Methode
+
+// .textContent – gibt ausgewälten Text (z.B. aus API) aus / (.textContent = xy)
+
+// Methoden
+// GET – lesen
+// POST – schreiben
+// DELETE – löschen
+
+// Fehlerklassen
+// 200 - 299 = OK
+// 400 – 499 = Client Fehler (404 - not found)
+// 500 – 599 = Server Fehler
+
+// JSON – Datenformat für Datenaustausch mit Server
+// JSON.stringify – Daten werden in JSON umgewandelt
+
+// URLSearchParams – Konstruktor erzeugt ein URLSearchParams Objekt von einem Query-String.
+// https://developer.mozilla.org/de/docs/Web/API/URLSearchParams
+

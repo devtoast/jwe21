@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat_App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div id="headline">
+            <h1>Chat_App</h1>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="wrapper">
+
+            <div class="get">
+                <textarea name="get_message" id="get_message" cols="30" rows="10" readonly></textarea>
+                <br>
+                <button id="btn_get_message">Get message</button>
+                <br>
+                <ol id="message-list"></ol>
+            </div>
+
+            <div class="post">
+
+                <div class="user" id="user">
+                    <input type="text" name="user_name" id="user_name" placeholder="User Name:">
+                </div>
+                <br>
+
+                <textarea name="post_message" id="post_message" cols="30" rows="10"
+                    placeholder="Deine Nachricht:"></textarea>
+                <br>
+
+                <button id="btn_post_message">Post message</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

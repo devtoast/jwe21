@@ -14,7 +14,7 @@ if (id) { // !== undefined
             else if (response.status === 404) {
                 throw new Error("Film nicht gefunden");
             } else {
-                throw new Error(`API Fehler bie id=${id}`);
+                throw new Error(`API Fehler bei id=${id}`);
             }
         })
         .then(function (filmInfos) {
