@@ -4,6 +4,7 @@ function getFilms(event) {
     fetch("https://ghibliapi.herokuapp.com/films")
         .then(function (response) {
             if (response.ok) {
+                console.log(response);
                 return response.json();
             } else {
                 throw new Error("API error");
